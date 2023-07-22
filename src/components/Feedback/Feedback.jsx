@@ -35,7 +35,7 @@ export class Feedback extends Component {
       <div className={css.feedback}>
         <Section title="Please leave feedback">
           <FeedbackOptions
-            options={[...Object.keys(this.state)]}
+            options={Object.keys(this.state)}
             onLeaveFeedback={this.feedbackBtnClick}
           />
         </Section>

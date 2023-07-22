@@ -37,9 +37,7 @@ export class Statistics extends Component {
 }
 
 Statistics.propTypes = {
-  props: PropTypes.shape({
-    total: PropTypes.number.isRequired,
-    positivePercentage: PropTypes.number.isRequired,
-    stats: PropTypes.objectOf(PropTypes.number).isRequired,
-  }),
+  total: PropTypes.number.isRequired,
+  positivePercentage: PropTypes.number.isRequired,
+  stats: PropTypes.objectOf(PropTypes.number).isRequired,
 };
