@@ -4,6 +4,7 @@ import { Statistics } from './Statistics/Statistics';
 import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
 import { Notification } from './Notification/Notification';
 import { Section } from './Section/Section';
+import { Title } from './Title/Title';
 import css from './Feedback.module.css';
 
 export class Feedback extends Component {
@@ -33,13 +34,15 @@ export class Feedback extends Component {
 
     return (
       <div className={css.feedback}>
-        <Section title="Please leave feedback">
+        <Section>
+          <Title title="Please leave feedback" />
           <FeedbackOptions
             options={Object.keys(this.state)}
             onLeaveFeedback={this.feedbackBtnClick}
           />
         </Section>
-        <Section title="Statistics">
+        <Section>
+          <Title title="Statistics" />
           <>
             {total ? (
               <Statistics {...stats} />

@@ -1,7 +1,4 @@
 import css from './../Feedback.module.css';
-export const Section = ({ title, children }) => (
-  <section className={css.section}>
-    <h2 className={css.title}>{title}</h2>
-    {children}
-  </section>
+export const Section = ({ children }) => (
+  <section className={css.section}>{children}</section>
 );
